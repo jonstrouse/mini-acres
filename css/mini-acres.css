@@ -1,0 +1,131 @@
+html {
+  font-family: sans-serif;
+}
+body {
+  font-family: Quicksand;
+}
+
+.header {
+  background-image: url("../images/blueberry-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.filter {
+  background-color: rgba(150, 200, 240, .55);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu {
+  padding-bottom: 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-container {
+  background-color: rgba(245, 245, 255, 1);
+  align-self: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.logo {
+  padding: 1.5em;
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+.logo img {
+  max-width: 100%;
+}
+.subtitle {
+  color: white;
+  text-align: center;
+
+}
+.menu button {
+  background-color: rgba(50, 255, 150, .75);
+  margin: 1em;
+  min-width: 150px;
+  border-radius: 2em;
+  padding: .5em 2em;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .15em;
+  border: none;
+  transition: .3s ease;
+}
+.menu button:hover {
+  cursor: pointer;
+  min-width: 160px;
+  background-color: rgba(50, 255, 150, 1);
+  color: rgba(0, 100, 255, 1);
+}
+
+/* >>> MAIN CONTENT */
+
+.services {
+  width: 80%;
+  margin: auto;
+}
+.icon {
+  width: 20%;
+  display: block;
+  margin: auto;
+}
+.div-title {
+  text-align: center;
+}
+
+
+/* >>> FOOTER CONTENT */
+
+#footer {
+  display: flex;
+
+}
+
+.copyright {
+  width: 80%;
+  margin: auto auto 2em;
+  display: grid;
+  grid-template-rows: 1.5em 1.5em 1.5em;
+}
+.copyright p {
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+
+  }
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    width: 20%;
+    padding: 2em;
+    margin: 0;
+  }
+  .menu {
+
+  }
+
+  .filter button:hover {
+    padding: .65em 2em;
+    min-width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+}

@@ -1,0 +1,73 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "berry"
+    "goat"
+    "hydro"
+    "cars"
+    "map"
+    "footer";
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.header {
+  height: auto;
+  grid-area: header;
+}
+
+.berry {
+  grid-area: berry;
+}
+
+.goat {
+  grid-area: goat;
+}
+
+.hydro {
+  grid-area: hydro;
+}
+
+.cars {
+  grid-area: cars;
+}
+
+#map {
+  grid-area: map;
+  height: 400px;
+  width: 90%;
+  margin: auto;
+}
+
+#footer {
+  height: 200px;
+  background-color: grey;
+  grid-area: footer;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas:
+      "header header"
+      "berry goat"
+      "hydro cars"
+      "map map"
+      "footer footer";
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .grid-container {
+    grid-template-columns: auto 45% 45% auto;
+    grid-template-areas:
+      "header header header header"
+      ". berry goat ."
+      ". hydro cars ."
+      ". map map ."
+      "footer footer footer footer";
+  }
+}
