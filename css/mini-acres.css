@@ -5,12 +5,14 @@ body {
   font-family: Quicksand;
 }
 
+
 .header {
   background-image: url("../images/blueberry-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-position: bottom;
+  position: relative;
 }
 
 .filter {
@@ -21,8 +23,8 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.menu {
-  padding-bottom: 3em;
+.action {
+  margin: 5em;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -46,25 +48,28 @@ body {
 .subtitle {
   color: white;
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.menu button {
+.subtitle h1 {
+  margin: .5em;
+}
+.action button {
   background-color: rgba(50, 255, 150, .75);
-  margin: 1em;
-  min-width: 150px;
+  min-width: 155px;
   border-radius: 2em;
   padding: .5em 2em;
-  color: white;
+  color: navy;
   font-weight: bold;
   letter-spacing: .15em;
   border: none;
   transition: .3s ease;
 }
-.menu button:hover {
+.action button:hover {
   cursor: pointer;
-  min-width: 160px;
+  min-width: 165px;
   background-color: rgba(50, 255, 150, 1);
-  color: rgba(0, 100, 255, 1);
 }
 
 /* >>> MAIN CONTENT */
@@ -87,9 +92,16 @@ body {
 
 #footer {
   display: flex;
-
+  flex-direction: column;
 }
-
+.social {
+  margin: 1em auto .5em;
+  width: 25px;
+  height:25px;
+}
+.social-img {
+  color: white;
+}
 .copyright {
   width: 80%;
   margin: auto auto 2em;
@@ -102,6 +114,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+
   .header {
 
   }
